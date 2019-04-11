@@ -60,6 +60,7 @@ class SpammerProtocol(SpawningClientProtocol):
 		if self.walk_cycle_running:
 			return
 		
+		speed_divider = config["walk"]["speed_divider"]
 		self.walk_cycle_running = True
 		
 		limit = config["walk"]["walk_distance"]
@@ -68,17 +69,17 @@ class SpammerProtocol(SpawningClientProtocol):
 		global sequence
 		sequence = []
 		
-		for _ in range(limit):
-			sequence.append(direction)
+		for _ in range(limit * speed_divider):
+			sequence.append(direction / speed_divider)
 		
-		for _ in range(limit):
-			sequence.append(direction * glm.vec3(-1, 1, -1))
+		for _ in range(limit * speed_divider):
+			sequence.append((direction / speed_divider) * glm.vec3(-1, 1, -1))
 			
 		def walk(position):
 			x, y, z = self.player_position = self.player_position - position
 			self.pos_look[0] = x
-			self.pos_look[1] = x
-			self.pos_look[2] = x
+			self.pos_look[1] = y
+			self.pos_look[2] = z
 			self.send_packet("player_position", self.buff_type.pack("ddd?", x, y, z, True))
 		
 		global index
@@ -158,7 +159,12 @@ class SpammerProtocol(SpawningClientProtocol):
 		buff.restore()
 		super(SpammerProtocol, self).packet_unhandled(buff, "join_game")
 		
+	# misc
+	def update_player_full(self):
+		if not self.walk_cycle_running:
+			super(SpammerProtocol, self).update_player_full()
 
+	
 class SpammerFactory(ClientFactory, ReconnectingClientFactory):
 	protocol = SpammerProtocol
 	

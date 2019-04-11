@@ -31,6 +31,7 @@ this is just a simple chat spammer bot with some configuration
 - walk (anti afk measure)
     - distance (in blocks, will return back to starting position)
     - speed (in ticks, lower means faster)
+    - speed_divider (use to smooth walking)
 - spawn mode
     - enabled (true or false)
     - speed (in ticks, lower means faster)
