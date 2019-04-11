@@ -10,6 +10,7 @@ this is just a simple chat spammer bot with some configuration
 - light weight
 
 ##Tutorial
+
 ###Requirements
 - Python 2.7 or 3.x
 - pip (comes by default with python)
@@ -19,6 +20,7 @@ this is just a simple chat spammer bot with some configuration
 - run ```pip install -r requirements.txt```
 
 ###Configuration
+
 ####config.json
 - account
     - username (required if not online)
