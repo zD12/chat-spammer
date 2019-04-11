@@ -7,7 +7,7 @@ this is just a simple chat spammer bot with some configuration
 - anti-afk measures
 - randomization
 - light weight
-- should would with 1.12.2 and 1.13.2 (for 1.13.2 you will need to be using the latest version of quarry's master branch)
+- should work with 1.12.2 and 1.13.2 (for 1.13.2 you will need to be using the latest version of quarry's master branch)
 
 ## Tutorial
 
