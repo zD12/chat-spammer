@@ -1,27 +1,26 @@
-Chat spammer
-============================
+# Chat spammer
 this is just a simple chat spammer bot with some configuration
 
-##Features
+## Features
 - very configurable
 - auto reconnecting
 - anti-afk measures
 - randomization
 - light weight
 
-##Tutorial
+## Tutorial
 
-###Requirements
+### Requirements
 - Python 2.7 or 3.x
 - pip (comes by default with python)
 
-###Installation
+### Installation
 - open a command window inside the folder of the project
 - run ```pip install -r requirements.txt```
 
-###Configuration
+### Configuration
 
-####config.json
+#### config.json
 - account
     - username (required if not online)
     - email (required for online)
@@ -43,7 +42,7 @@ this is just a simple chat spammer bot with some configuration
 - rng_events (array of all events that should be randomized, all randomizable events are respawn_speed, anti_afk, message_speed)
 - prefix (what you want your messages to start with)
 
-####messages.csv
+#### messages.csv
 its a standard csv with labeled columns
 - prefix_flag
     - never (messages will never have a prefix)
@@ -51,6 +50,6 @@ its a standard csv with labeled columns
     - random (when the message is sent it has a random chance to show or hide the prefix)
 - message (any message you want)
 
-###Execution
+### Execution
 - in the project folder run ```python start.py```
 
