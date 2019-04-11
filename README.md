@@ -1,8 +1,5 @@
 # Chat spammer
 this is just a simple chat spammer bot with some configuration
-should would with 1.12.2 and 1.13.2
-
-for 1.13.2 you will need to be using the latest version of quarry's master branch
 
 ## Features
 - very configurable
@@ -10,6 +7,7 @@ for 1.13.2 you will need to be using the latest version of quarry's master branc
 - anti-afk measures
 - randomization
 - light weight
+- should would with 1.12.2 and 1.13.2 (for 1.13.2 you will need to be using the latest version of quarry's master branch)
 
 ## Tutorial
 
