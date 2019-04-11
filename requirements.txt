@@ -10,6 +10,7 @@ incremental==17.5.0
 pyasn1==0.4.5
 pyasn1-modules==0.2.4
 pycparser==2.19
+PyGLM==0.5.2b1
 PyHamcrest==1.9.0
 pymongo==3.7.2
 pyOpenSSL==19.0.0
