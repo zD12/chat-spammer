@@ -9,6 +9,17 @@
     "host": "",
     "port": 0
   },
-  "anti_afk": 220,
-  "speed": 500
+  "walk": {
+    "walk_distance": 3,
+    "speed": 20
+  },
+  "spawn_mode": {
+    "enabled": false,
+    "speed": 2
+  },
+  "respawn_speed": 50,
+  "anti_afk": 900,
+  "message_speed": 3600,
+  "rng_events": ["respawn_speed", "anti_afk", "message_speed"],
+  "prefix": "> "
 }
