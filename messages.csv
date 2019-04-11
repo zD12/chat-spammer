@@ -1,0 +1,4 @@
+prefix_flag,message
+never,this message will never have the > prefix
+always,this message will always have the > prefix
+random,this message will have the > prefix at random

@@ -1,0 +1,14 @@
+{
+  "account": {
+    "username": "",
+    "email": "",
+    "password": "",
+    "online": false
+  },
+  "server": {
+    "host": "",
+    "port": 0
+  },
+  "anti_afk": 220,
+  "speed": 500
+}
