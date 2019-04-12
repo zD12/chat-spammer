@@ -138,7 +138,7 @@ class SpammerProtocol(SpawningClientProtocol):
 	@staticmethod
 	def get_delay(name):
 		if name in config["rng_events"]:
-			return random.randint(0, config[name])
+			return random.randint(config[name] * config["rng_min"], config[name])
 		return config[name]
 		
 	# packet handling
@@ -181,6 +181,9 @@ def main():
 		profile = yield OfflineProfile.from_display_name(config["account"]["username"])
 	
 	factory = SpammerFactory(profile)
+	if config["server"]["version"]:
+		factory.force_protocol_version = config["server"]["version"]
+		
 	yield factory.connect(config["server"]["host"], config["server"]["port"])
 
 

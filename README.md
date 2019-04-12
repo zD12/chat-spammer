@@ -30,6 +30,7 @@ this is just a simple chat spammer bot with some configuration
 - server
     - host (server ip address)
     - port (server port, default 25565)
+    - version ([protocol version of minecraft](https://wiki.vg/Protocol_version_numbers) or null)
 - walk (anti afk measure)
     - distance (in blocks, will return back to starting position)
     - speed (in ticks, lower means faster)
@@ -41,6 +42,7 @@ this is just a simple chat spammer bot with some configuration
 - anti_afk (in ticks, how fast should go through the anti-afk steps)
 - message_speed (in ticks, how often to sent a new message)
 - rng_events (array of all events that should be randomized, all randomizable events are respawn_speed, anti_afk, message_speed)
+- rng_min (minimum number by percentage, decimal between 0 and 1)
 - prefix (what you want your messages to start with)
 
 #### messages.csv
