@@ -7,7 +7,8 @@
   },
   "server": {
     "host": "",
-    "port": 0
+    "port": 0,
+    "version": null
   },
   "walk": {
     "walk_distance": 3,
@@ -22,5 +23,6 @@
   "anti_afk": 900,
   "message_speed": 3600,
   "rng_events": ["respawn_speed", "anti_afk", "message_speed"],
+  "rng_min": 0.25,
   "prefix": "> "
 }
