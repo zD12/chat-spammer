@@ -14,7 +14,6 @@ PyGLM==0.5.2b1
 PyHamcrest==1.9.0
 pymongo==3.7.2
 pyOpenSSL==19.0.0
-pywin32==224
 quarry==1.1.1
 service-identity==18.1.0
 six==1.12.0

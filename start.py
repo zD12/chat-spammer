@@ -14,7 +14,7 @@ with open("config.json") as config_file:
 
 messages = []
 
-with open("messages.csv", newline="") as _messages_csv:
+with open("messages.csv") as _messages_csv:
 	_messages = csv.DictReader(_messages_csv)
 	for row in _messages:
 		messages.append((row["prefix_flag"], row["message"]))

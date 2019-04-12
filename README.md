@@ -12,12 +12,13 @@ this is just a simple chat spammer bot with some configuration
 ## Tutorial
 
 ### Requirements
-- Python 2.7 or 3.x
+- Python 3.5 or higher
 - pip (comes by default with python)
 
 ### Installation
 - open a command window inside the folder of the project
 - run ```pip install -r requirements.txt```
+- windows: ```pip install pywin32```
 
 ### Configuration
 
